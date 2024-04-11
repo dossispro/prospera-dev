@@ -1,0 +1,223 @@
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image-test {
+    background-image: url('https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.background-opacity-test {
+    height: 100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 1
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.hero__container_height {
+    height: 100%;
+}
+
+.hero__content-width {
+    max-width: 540px;
+
+}
+
+
+.hero__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px; 
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.hero__scroll-btn .bi {
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+
+.customer-logo {
+    height: auto;
+    max-height: 70px;
+    aspect-ratio: auto;
+    width: auto;
+}
+
+.card-back {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 400px;
+    min-height: 400px;
+}
+
+.card-web-dev {
+    background-image: url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.card-seo {
+    background-image: url('https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+
+}
+
+   
+.card-logo {
+    background-image: url('https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=2678&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+
+}
+
+.card-copywriting {
+    background-image: url('https://images.unsplash.com/photo-1558009250-d3d2229fdf28?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+
+}
+
+.main-title > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.paragraph-text > p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.our-work > h3, .their-work > h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.their-work > ul, .our-work > ul {
+    list-style: none;
+}
+
+
+.their-work > ul > li, .our-work > ul > li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bi-check-circle-fill {
+    fill: rgb(255, 0, 0),
+}
+
+.border-end, .border-start {
+    --bs-border-width: 4px;
+  }
+
+.highlight {
+    background-color: teal;
+}
+
+.pricing-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+.faq-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+
+.contact-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+/* 
+.card-body > ul > li {
+} */
+
+.navbar-nav > li {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+
+.history-logo-horizontal {
+    /* max-height: 45px;
+    min-height: 40px; */
+    max-width: 180px;
+    min-width: 150px;
+    /* filter: grayscale(100%); */
+}
+
+.history-logo-round {
+    max-height: 75px;
+    max-width: 100px;
+    filter: grayscale(%);
+}
+
+.figure-image {
+    max-width: 200px;
+}
+
+
+.professional-experience-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+#text-submission {
+    max-height: 200px; 
+    overflow-y: auto;
+  }
+
+/* dev-tools */
+
+.dev-tools-hero {
+    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 250px;
+    width: 400px;
+    background-size: cover;
+}
+
+.badge {
+    color: #6366f1 !important;
+    background-color: rgba(99,102,241,.12) !important;
+    transition: background-color .25s ease;
+    text-decoration: none;
+    font-size: 0.875rem !important;
+}
+
+
+.template-image {
+    max-width: 100%; /* Set maximum width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space beneath inline images */
+}

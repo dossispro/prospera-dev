@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">  
+  <meta name="description" content="Hamilton Web Design - I'll build you a website that is effective and gorgeous.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Hamilton, Web Design, Web-Design, Web Development, Greater Hamilton Area, Toronto, Landing Page, Business Website">
+  <meta name="author" content="Spencer MacDonald">
+
+  <!-- netlify-express-test\src\public\styles\style.css -->
+  <!-- boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+  <!-- Theme CSS -->  
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+  <title>Prospera</title>
+</head>
+<body>
+
+  <!-- to-do:
+  - create google business / instagram / facebook
+    https://g.page/r/CS-2iX7VyTMPEAI/review
+  - 5 posts on those each
+  - add pricing for logo design / SEO / copy writing
+  - why isn't explore bouncing 
+  - make icons buttons that trigger nightFunction() and lightFunction()
+  - COPYHWRITING STUFF:
+  > 100/hr copywriting
+  > https://www.youtube.com/watch?v=aKUoWPGph-M
+  >> Copy this message
+  >> voice of customer messaging
+  >> copy the case-study here and show 900% increase in converstion
+  >> AI-GEN Package
+  >> Copy this guy's AI stuff too.  
+  - SEO stuff: 
+  > SEO AUDIT
+  > 
+                        -->
+
+
+ <!-- Header -->
+<header id="header" class="header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0 position-absolute fixed-top">
+
+    <div class="container-fluid">
+
+      <div class="night-mode-toggle-holder d-flex justify-content-center align-items-center">
+        <img class="navbar-brand logo" href="#" src="assets/img/prospera_logo.svg" width="45" alt="icon"></img>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="bi bi-brightness-high-fill"></i>
+        <div class="form-check form-switch ms-1 me-1 d-flex justify-content-center">
+          <input
+            class="form-check-input p-2 bg-primary"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+            onclick="toggleNightMode()"
+          />
+        </div>
+        <i class="bi bi-moon-stars-fill"></i>
+
+      </div>
+      
+        <button class="navbar-toggler border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>      
+        </button>
+        <div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link active scrollto" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="about_me.html">ABOUT</a></li>
+          </div>
+        </div>
+    </div>
+
+  </nav>
+</header>
+
+<!-- Hero -->
+
+<section id="hero" class="background-image-test">
+  <div class="background-opacity-test">
+
+  <div class="container hero__container_height d-flex align-items-center">
+
+    <div class="hero__content-width">
+
+      <div class="">
+
+        <h1 class="hero-title text-light mb-4">Prospera <br> Web Design </h1>
+        <p class="lead mb-4 text-light">Serving Hamilton Ontario and nearby areas, I'll design and deploy a great website. Let's talk about your business needs, and figure out what type of website will work best.</p>
+        <h3 class="hero__heading fw-bold text-light">Contact Me:</h3>
+        <a href="tel:12899836977" class="phone-button mt-2 btn btn-lg btn-primary" role="button"><i class="bi bi-telephone me-2"></i>1-289-983-6977</a>
+          <div class="d-none d-lg-block">            
+            <a href="mailto:prospera.web.dev@gmail.com" class="email-button mt-2 btn btn-lg btn-outline-secondary text-light" role="button"><i class="bi bi-envelope-at me-2"></i>prospera.web.dev@gmail.com</a>
+          </div>
+          <div class="d-lg-none">            
+            <a href="mailto:prospera.web.dev@gmail.com" class="email-button mt-2 btn btn-lg btn-outline-secondary text-light" role="button"><i class="bi bi-envelope-at me-2"></i>Email Me</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  
+  <a id="scroll-down" href="#scroll-down" class="hero__scroll-btn">
+    Explore <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="white" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+    </svg>
+  </a>
+</div>
+</section>
+
+
+
+<!-- customers -->
+<section id="customers" class="bg-secondary-subtle py-3">
+  <div class="container text-center">
+    <h2 class="mt-0 pt-0 text-body-secondary">Customers</h2>
+    <div class="row row-cols-12 row-cols-xl-6 d-flex justify-content-center">
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src="assets/img/customers/Notifik.png" alt="Logo 1">
+      </div>
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src="assets/img/customers/smartBuildingToys.png" alt="Logo 2">
+      </div>
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src=" assets\img\customers\maskLogo.png" alt="Logo 4">
+      </div>
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src="assets/img/customers/cineClub.png" alt="Logo 5">
+      </div>
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src="assets/img/customers/cheddarTree.png" alt="Logo 6">
+      </div>
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src="assets/img/customers/grandvilleconstruction.webp" alt="Logo 7">
+      </div>
+      <div class="col m-3 position-relative">
+        <img class="customer-logo" src="assets/img/customers/apple-touch-icon.png" alt="Logo 8">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="" >
+  <div class="container mt-3 text-center">
+    <h2 class="mt-0 pt-0 text-body-secondary">Services<h2>
+        <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+
+          <div class="col">
+            <div class="card card-web-dev card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+              <div class="card-back d-flex flex-column h-100 p-5 pb-3">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-shadow">Web Design & Development</h3>
+                <p>What type of website do you want?</p>
+              </div>
+            </div>
+          </div>
+
+   
+            <div class="col">
+              <div class="card card-seo card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex card-back flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">SEO</h3>
+                  <p>Where do you want to rank on Google?</p>
+                </div>
+              </div>
+            </div>
+
+
+          <div class="col">
+            <div class="card card-logo card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+              <div class="d-flex card-back flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Logo Creation</h3>
+                <p>An image says a thousand words</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="col">
+              <div class="card card-copywriting card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex card-back flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Copywriting and Content</h3>
+                  <p>Effective communication is key to selling</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- benefits -->
+<section id="benefits" class="mb-5 pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="row text-holder justify-content-center">
+        <div class="main-title text-center mb-5">
+          <h2>I DO THINGS <span class="highlight">DIFFERENTLY</span></h2>
+        </div>
+        <div class="col-8 paragraph-text text-center mb-5">
+          <p class="lead">
+            I know what's important to your business. My competitors will use WordPress or SquareSpace to build your website. That means extra cost, and extra headache. 
+            With me - you'll get a polished product at a reasonable price. 
+          </p>
+        </div>
+      </div>
+    <div class="col-lg-6 col-sm-12 our-work border-end ">
+      <h3 class="text-center">ME:</h3>
+      <ul>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          COST EFFECTIVE</li>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+           CUSTOMIZED TO YOUR BUSINESS</li>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+           BUSINESS SAVVY</li>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          NO HIDDEN BLOAT</li>
+      </ul>
+    </div>
+    <div class="col-lg-6 col-sm-12 their-work border-start">
+      <h3 class="text-center">THEM:</h3>
+      <ul>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2REM" height="2REM" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+          </svg>
+        </i> EXPENSIVE</li>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2REM" height="2REM" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+          </svg>
+         TEMPLATES</li>
+        <li>
+          <svg class="me-3"  xmlns="http://www.w3.org/2000/svg" width="2REM" height="2REM" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+          </svg>
+         NO BUSINESS ACUMEN</li>
+        <li>
+          <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="2REM" height="2REM" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+          </svg>
+         BLOATWARE AND SLUGGISHNESS</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- pricing -->
+<section id="pricing" class="py-5 bg-secondary-subtle">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h2 class="text-center pricing-title">WEBSITE DESIGN PRICING</h2>
+
+      <div class="card m-3" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="text-center">Landing Page</h4>
+          <h5 class="p-2 mt-3">What You Get:</h5>
+          <ul> 
+            <li>1 Hour Brainstorm</li>
+            <li>Mobile & Desktop Friendly</li>
+            <li>Google Maps</li>
+            <li>Social Media Integration</li>
+            <li>2 Rounds of Revisions</li>
+          </ul>
+          <div class="wpb_wrapper">
+            <p style="font-size: 30px; text-align: center;"><span style="color: #ff9d00;"><strong>$500<br>
+      </strong></span><span style="color: #ff9d00; margin-top: 15px; display: block;"><strong style="font-size: 14px; line-height: 14px; position: relative; top: -35px;">+$100 per additional page </br> <small>**Prices do not include taxes</small></strong></span></p>
+      
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="tel:12899836977" class="btn btn-primary">289-983-6977</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-3" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="text-center">Multi-Page Website</h4>
+          <h5 class="p-2 mt-3">What you get:</h5>
+          <ul> 
+            <li>4 Pages</li>
+            <li>1 Hour Brainstorm</li>
+            <li>Mobile & Desktop Friendly</li>
+            <li>Photo Carousels</li>
+            <li>2 Rounds of Revisions</li>
+          </ul>
+          <div class="wpb_wrapper">
+            <p style="font-size: 30px; text-align: center;"><span style="color: #ff9d00;"><strong>$700<br>
+      </strong></span><span style="color: #ff9d00; margin-top: 15px; display: block;"><strong style="font-size: 14px; line-height: 14px; position: relative; top: -35px;">+$100 per additional page </br> <small>**Prices do not include taxes</small></strong></span></p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="tel:12899836977" class="btn btn-primary">289-983-6977</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="FAQ">
+  <div class="container my-5">
+    <div class="text-center pb-3">
+      <h3 class="faq-title">FAQ</h3>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How long does it take for my website to be built?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            A site usually takes 2-4 weeks to complete. I'm passionate about making sure your website is built to your needs. I'll invest a lot of time learning about your offerings, your customers, and everything between. 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Can I make changes to the website myself?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Yes, of course! There's lots of ways to 'hand-off' the ownership of your website. You'll be able to edit any of your content, from titles to paragraphs to images! However, if you want me to maintain your website, <strong>we can setup a retainer</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What is your hosting & domain policy?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            I prefer to keep costs as low as I can, while providing <strong>maximum security and performance</strong>. All of my previous projects are hosted on Netlify - a great free hosting platform, with great security & privary policies. My competition uses templating-services like WordPress or SquareSpace - these add extra cost and complexity that could impact your bottom line. If you're looking for maximum privacy, we can consider a <strong> GDPR compliant Web Hoster</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Who provides the text for the website?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              I am a copywriter by trade - so if you want strong copy that communicates effectively, I can generate all text. If you want to supply all of the content for your website, that's great! 
+            <small class="text-body-secondary">(less work for me <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"/>
+            </svg>)</small>
+            </p>
+            <p>
+            I'll charge $100/Hr for copywriting, including the time collecting all relevant information about your business & offerings.
+            </p>
+            <h5 class="mt-2">Copywriting Package</h5>
+            <ul>
+              <li>Interviews With Staff</li>
+              <li>Review Product Documentation</li>
+              <li>Interview with Customers</li>
+              <li>Understanding your Customers' Purchasing Process</li>
+              <li>Writing Compelling, Concise Copy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            How much input do I have?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The website is yours, entirely! If you want complete creative control - that works for me. If you want to let my talent & design preferences drive the design - that's good for me too. There's usually a feeling out process - I need to work towards understanding your needs. I'll setup meetings with you, your staff, your customers, & review your company's documentation in order to fully get the whole picture.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Can you do a WordPress or Shopify Site?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>If you prefer, <strong>I can build you a site in WordPress or Shopify.</strong> These are powerful web-design engines with proven track records. 
+              However, there's a lot of added cost to these large web-hosters, along with a lot of overhead on the backend, oftentimes causing issues of sluggishness. 
+            </p>
+            <p>Honestly - <strong>I like building custom websites for my customers</strong>. Every project offers new requirements and an opportunity to learn, grow and get better. 
+              Make no mistake - your business comes first. And if you value the stability of large web-hosting platforms, let's go with that!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Do you provide ongoing maintenance and support?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Yes, I offer maintenance and support plans to ensure your website remains secure, up-to-date, and continues to meet your business needs. 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            What is responsive design, and why is it important?
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Responsive design</strong> ensures your website looks and functions well on various devices. It's crucial for providing a seamless user experience and positively impacting SEO. I'll design a great mobile - tablet - or desktop website! It would be great to know if your intended audience prefers mobile or desktop - along with other insights, like how much information an average customer consumes before making a purchase from you.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            How do you approach SEO for websites?
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              We follow best practices for on-page SEO, including keyword research, optimized content, proper meta tags, and a focus on site speed and mobile-friendliness.
+            </p>
+            <p>
+              However, 'best practices' aren't enough for you to rank #1. I have the secret ingredient that will catapult your website up the ranks!
+            <small>(The modern recipe for SEO greatness involves a lot of hard work - anyone advertising a quick turn-around to #1 is trying to take advantage of you.)</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+</section>
+
+<!-- Contact Us -->
+<section id="contact-us">
+  <div class="container-fluid">
+    <h2 class="text-center contact-title"> Contact Me </h2>
+    <div class="row mt-3">
+      <div class="col-lg-8 offset-lg-2 border-primary border p-4 mb-4">
+
+        <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
+          <p class="hidden"   style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+            <label type="hidden" style="visibility: hidden;">
+              Dont fill this out if youre human: <input type="hidden" name="bot-field"/>
+            </label>
+          </p>
+
+          <div class="mb-3">
+            <label for="newEmail" class="form-label">Email address</label>
+            <input type="newEmail" name="email" class="form-control" id="email-submission" aria-describedby="emailHelp"/>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="newName" class="form-label">Name</label>
+            <input type="first_name" name="first_name" class="form-control" id="name-submission"/>
+          </div>
+          <div class="mb-3">
+            <label for="newText" class="form-label">Description of Work</label>
+            <textarea type="text" name="text" class="form-control" id="text-submission"></textarea>
+          </div>
+          <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary d-flex justify-content-center">Submit</button>
+        </div>
+        </form>
+      </div>
+
+    
+
+      <div class="col-12 d-flex justify-content-center">
+        <a href="tel:12899836977" class="phone-button mt-2 btn btn-lg btn-primary" role="button"><i class="bi bi-telephone me-2"></i>1-289-983-6977</a>
+      </div>
+      <div class="col-12 mb-5">
+        <div class="d-none d-lg-flex justify-content-center">            
+          <a href="mailto:prospera-web-dev??@gmail.com" class="email-button mt-2 btn btn-lg btn-outline-secondary" role="button"><i class="bi bi-envelope-at me-2"></i>prospera.web.dev@gmail.com</a>
+        </div>
+        
+        <div class="d-lg-none d-flex justify-content-center align-items-center">            
+          <a href="mailto:prospera.web.dev@gmail.com" class="email-button mt-2 btn btn-lg btn-outline-secondary" role="button"><i class="bi bi-envelope-at me-2"></i>Email Me</a>
+        </div>
+        <p class="text-center m-3 px-5">I'm based in Hamilton - so if you want to meet face to face, maybe we can grab a coffee <small>(or a beer)</small> at a local spot?</p>
+      </div>
+    </div>
+    <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2905.7216211399073!2d-79.87172292269356!3d43.257255777947606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sking%20and%20james!5e0!3m2!1sen!2sca!4v1705179348605!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+
+
+
+</section>
+
+
+<!-- footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© Prospera Web Dev</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use src="public/images/prospera-logo.jpg"></use></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+      </svg></a></li>
+      <li class="ms-3"><a class="" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+      </svg></a></li>
+      <li class="ms-3"><a class="" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+      </svg></a></li>
+    </ul>
+  </footer>
+</div>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
+  
